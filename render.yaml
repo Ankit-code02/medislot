@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: medislot
+    env: docker
+    buildCommand: "mvn clean install -DskipTests"
+    startCommand: "java -jar target/*.jar"
